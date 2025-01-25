@@ -1,1 +1,75 @@
-test user
+String S="MY NAME IS ANKIT";
+Char ch[]=S.toCharArray();
+
+HashMap<Character, Integer>hmap= new HashMap<Character, Integer>();
+for(Char c:ch)
+
+{
+if(hmap.containsKey(c))
+{
+hmap.put(c, hmap.get(c)+1);
+}else
+{
+hmap.put(c,1);
+}
+
+
+}
+
+for(hmap.entry me:hmap.entitySet())
+{
+
+sopln("Key is: "+me.getKey() +"Value is: "+ me.getValue());
+}
+
+
+
+
+int a= 1000;
+int temp=0;
+if(a==0 || a<1)
+{
+
+sopln("No is not prime");
+}else if(a==2)
+{
+sopln("No is prime")
+
+}else
+{
+
+for(int i=2;i<a;i++)
+
+{
+
+if(a%i==0)
+
+{
+sopln("no is not prime");
+temp=1;
+break;
+}
+
+}
+
+if(temp==0)
+{
+sopln("no is prime");
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
